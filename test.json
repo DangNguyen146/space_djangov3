@@ -1,0 +1,73 @@
+{
+    "username": "admin",
+    "fullname": "Dang Nguyen",
+    "avatars": "/uploads/2021/11/doi.jpg",
+    "cover": "/uploads/2021/11/20190816_175751.jpg",
+    "description": "xIN CHÀO",
+    "phones": [
+        {
+            "name": "Dang Nguyen",
+            "phone": "0817764291",
+            "description": "Số điện thoại"
+        }
+    ],
+    "emails": [
+        {
+            "name": "Dang Nguyen",
+            "email": "blacksonia.tm@gmail.com",
+            "description": "Đây là email"
+        }
+    ],
+    "socials": [
+        {
+            "name": "Facebook",
+            "image": null,
+            "link": "https://www.facebook.com/blacksonia14/",
+            "description": "Link face mình ây"
+        },
+        {
+            "name": "instagram",
+            "image": null,
+            "link": "https://www.instagram.com/",
+            "description": "instagram"
+        },
+        {
+            "name": "500px",
+            "image": null,
+            "link": "https://500px.com/p/blacksoniatm",
+            "description": "500px"
+        }
+    ]
+}
+
+
+{
+    "data1": {
+        "id": 1,
+        "avatars": null,
+        "first_name": "",
+        "last_name": "",
+        "username": "admin",
+        "email": "admin@gmail.com",
+        "date_joined": "2021-11-23T16:29:42.110499Z"
+    },
+    "data2": [
+        {
+            "title": "facebook.com",
+            "link": "fb.com/123"
+        },
+        {
+            "title": "zalo",
+            "link": "0817764291"
+        },
+        {
+            "title": "intergram",
+            "link": "123456789"
+        }
+    ],
+    "data3": {
+        "avatar": "C:\\fakepath\\66126100_107349180570897_3815450307823927296_o.jpg",
+        "profile_title": "Nguyen Khai đăng",
+        "decripttion": "Chào mọi người"
+    }
+}
