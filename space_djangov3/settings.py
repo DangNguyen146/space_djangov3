@@ -99,11 +99,11 @@ WSGI_APPLICATION = 'space_djangov3.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'spacedbv3',
-        'USER': 'dangnk',
-        'PASSWORD': 'dangnk',
-        'HOST': '192.168.1.8',
-        'PORT': '5432',
+        'NAME': os.environ.get('DJANGO_DB_NAME', 'default_db_name'),
+        'USER': os.environ.get('DJANGO_DB_USER', 'default_db_user'),
+        'PASSWORD': os.environ.get('DJANGO_DB_PASSWORD', 'default_db_password'),
+        'HOST': os.environ.get('DJANGO_DB_HOST', 'default_db_host'),
+        'PORT': os.environ.get('DJANGO_DB_PORT', 'default_db_port'),
     }
 }
 MEDIA_ROOT = '%s/cards/static/' % BASE_DIR
