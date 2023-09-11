@@ -5,10 +5,15 @@ services:
       context: ./
       dockerfile: Dockerfile
     environment:
-      - DJANGO_DB_NAME=spacedbv3
-      - DJANGO_SU_NAME=dangnk
+      - EMAIL_HOST_USER=spacedjango5@gmail.com
+      - EMAIL_HOST_PASSWORD=12345678asd
+      - DJANGO_DB_NAME=postgres
+      - DJANGO_SU_NAME=postgres
+      - DJANGO_DB_USER=postgres
       - DJANGO_SU_EMAIL=dangnk@my.company
-      - DJANGO_SU_PASSWORD=dangnk
+      - DJANGO_SU_PASSWORD=postgres
+      - DJANGO_DB_PASSWORD=postgres
+      - DJANGO_DB_HOST=127.0.0.1:5432
     command: 
       - sh
       - -c

@@ -95,6 +95,7 @@ WSGI_APPLICATION = 'space_djangov3.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
+import os
 
 DATABASES = {
     'default': {
@@ -166,7 +167,7 @@ REST_FRAMEWORK = {
         'rest_framework_simplejwt.authentication.JWTAuthentication',
     ), 
 }
-# import os
+
 
 # EMAIL_USE_TLS = True
 # EMAIL_HOST = 'smtp.gmail.com'
