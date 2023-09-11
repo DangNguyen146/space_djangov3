@@ -1,22 +1,22 @@
-version: v3
+version: "3.9"
 services:
-  db:
-    image: postgres
-    volumes:
-      - ./data/db:/var/lib/postgresql/data
-    environment:
-      - POSTGRES_DB=spacedbv3
-      - POSTGRES_USER=dangnk
-      - POSTGRES_PASSWORD=dangnk
-  web:
-    command: python manage.py runserver 0.0.0.0:8000
-    build:
+  spacezbe:
+    build: 
       context: ./
       dockerfile: Dockerfile
+    environment:
+      - DJANGO_DB_NAME=spacedbv3
+      - DJANGO_SU_NAME=dangnk
+      - DJANGO_SU_EMAIL=dangnk@my.company
+      - DJANGO_SU_PASSWORD=dangnk
+    command: 
+      - sh
+      - -c
+      - |
+        python manage.py makemigrations
+        python manage.py migrate        
+        python manage.py runserver 0.0.0.0:8000
     volumes:
       - .:/code
     ports:
       - "8000:8000"
-    depends_on:
-      - db
-  

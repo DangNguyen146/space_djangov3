@@ -102,7 +102,7 @@ DATABASES = {
         'NAME': 'spacedbv3',
         'USER': 'dangnk',
         'PASSWORD': 'dangnk',
-        'HOST': 'localhost',
+        'HOST': '192.168.1.8',
         'PORT': '5432',
     }
 }
@@ -162,6 +162,7 @@ OUTH2_INFO ={
 REST_FRAMEWORK = { 
     'DEFAULT_AUTHENTICATION_CLASSES': (
         'oauth2_provider.contrib.rest_framework.OAuth2Authentication',
+        
         'rest_framework_simplejwt.authentication.JWTAuthentication',
     ), 
 }

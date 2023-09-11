@@ -99,3 +99,16 @@ https://app.creately.com/diagram/4qBlCNBx4tj/edit
 
 
 "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --disable-web-security --disable-gpu --user-data-dir=~/chromeTemp
+
+
+
+docker run  -d --name postgresql -p "5432:5432"  -e POSTGRESQL_USERNAME=dangnk -e POSTGRESQL_PASSWORD=dangnk -e POSTGRESQL_DATABASE=spacedbv3 bitnami/postgresql:latest 
+
+psql -U dangnk -d spacedbv3
+python manage.py makemigrations
+python manage.py migrate
+
+python manage.py createsuperuser
+<!-- admin -->
+<!-- admin -->
+python3 manage.py runserver
