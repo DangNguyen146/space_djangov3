@@ -8,6 +8,12 @@ ADD ./requirements.txt /app/requirements.txt
 
 RUN apk update && apk add --no-cache postgresql-dev
 
+# Install libffi-dev
+RUN apk add --no-cache libffi-dev
+
+# Install bash
+RUN apk add --no-cache bash
+
 RUN set -ex \
     && apk add --no-cache --virtual .build-deps postgresql-dev build-base \
     && apk add --no-cache zlib-dev libjpeg-turbo-dev

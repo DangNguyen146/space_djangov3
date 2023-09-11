@@ -107,6 +107,9 @@ docker run  -d --name postgresql -p "5432:5432"  -e POSTGRESQL_USERNAME=dangnk -
 psql -U dangnk -d spacedbv3
 python manage.py makemigrations
 python manage.py migrate
+python manage.py collectstatic
+
+Cài đặt STATIC_ROOT sẽ trỏ đến thư mục nơi Django thu thập các tệp tĩnh. Đảm bảo rằng nó được đặt chính xác thành đường dẫn chứa tệp tĩnh của bạn.
 
 python manage.py createsuperuser
 <!-- admin -->
