@@ -115,3 +115,9 @@ python manage.py createsuperuser
 <!-- admin -->
 <!-- admin -->
 python3 manage.py runserver
+
+
+
+
+https://stackoverflow.com/questions/30027203/create-django-super-user-in-a-docker-container-without-inputting-password
+Docker auto create user supper admin
